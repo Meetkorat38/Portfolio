@@ -1,12 +1,10 @@
 "use client";
 import Card from "@/components/Card";
 import TextSection from "@/components/TextSection";
-import StarIcon from "@/assets/icons/star.svg";
 import Image from "next/image";
 import BookPage from "@/assets/images/book-cover.png";
-import mapImage from "@/assets/images/map.png";
+import mapImage from "@/assets/images/ahmedabad.jpg";
 import SmileMemoji from "@/assets/images/memoji-smile.png";
-import { motion } from "framer-motion";
 import {
   IoLogoCss3,
   IoLogoGithub,
@@ -140,7 +138,7 @@ export const AboutSection = () => {
             </Card>
             <Card className="h-[320px] p-0 relative md:col-span-3 lg:col-span-2">
               <Image
-                className="object-cover h-full w-full"
+                className="object-cover h-full w-full scale-5"
                 src={mapImage}
                 alt="Map Image"
               />

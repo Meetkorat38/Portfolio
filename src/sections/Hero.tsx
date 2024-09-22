@@ -76,9 +76,8 @@ export const HeroSection = () => {
             Korat Meet
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Skilled and proficient entry-level website designer with tremendous
-            dedication to work and a demonstrated ability in customer
-            administration and satisfaction
+            Creative developer focused on building user-friendly, high-quality
+            applications that leave a lasting impression.{" "}
           </p>
         </div>
 
@@ -87,7 +86,10 @@ export const HeroSection = () => {
             <span className="font-semibold ">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
-          <a href="https://www.linkedin.com/in/meet-korat-335632245/" target="_blank" className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+          <a
+            href="https://www.linkedin.com/in/meet-korat-335632245/"
+            target="_blank"
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
             <span>👋</span>
             <span className=" font-semibold">Let&apos;s connect</span>
           </a>
@@ -104,7 +106,6 @@ const HeroRing = ({ size }: { size: number }) => {
         height: `${size}px`,
         width: `${size}px`,
       }}
-      className="absolute inset-0 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5"
-    ></div>
+      className="absolute inset-0 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5"></div>
   );
 };

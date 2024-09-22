@@ -1,48 +1,55 @@
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowRightIcon from "@/assets/icons/arrow-up-right.svg";
 import Image from "next/image";
 import GrainImage from "@/assets/images/grain.jpg";
 import TextSection from "@/components/TextSection";
+import BackendImage from "@/assets/images/backend.png"
+import Snackcase from "@/assets/images/snackcase.png"
+import AspectMate from "@/assets/images/aspectmate.png"
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
+    company: "Snackcase",
     year: "2022",
-    title: "Dark Saas Landing Page",
+    title: "Create customization Iphone case",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "CaseCobra – Next.js 14 E-Commerce Shop" },
+      { title: "Tailored Artworks Integration" },
+      { title: "Custom Phone Case Configurator" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://snackcase.vercel.app/",
+    image: Snackcase,
+    buttonTitle : "Visit Live Site"
   },
   {
-    company: "Innovative Co",
+    company: "Aspect mate",
     year: "2021",
-    title: "Light Saas Landing Page",
+    title: "Give Dimensions to your image",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "AspectMate – Cloud-Based Image Tool" },
+      { title: "Cloudinary Image Customization" },
+      { title: "SaaS Architecture with Tailwind" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://aspect-mate.vercel.app/",
+    image: AspectMate,
+    buttonTitle : "Visit Live Site"
+
   },
   {
-    company: "Quantum Dynamics",
+    company: "Backend Project",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "Backedn for MERN stack app",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "AdminPower – MERN Stack Backend" },
+      { title: "Admin Dashboard Integration" },
+      { title: "Efficient Data with Real-Time Updates" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://github.com/Meetkorat38/backend",
+    image: BackendImage,
+    buttonTitle : "View Github"
+
   },
 ];
 
@@ -74,8 +81,6 @@ export const ProjectsSection = () => {
                   <div className="lg:pb-2">
                     <div className="bg-gradient-to-r from-emerald-400 to-purple-500 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
                       <span>{project.company}</span>
-                      <span>&bull;</span>
-                      <span>{project.year}</span>
                     </div>
                     <h3 className="font-serif text-2xl md:text-4xl md:mt-5 mt-2">
                       {project.title}
@@ -94,7 +99,7 @@ export const ProjectsSection = () => {
                     </ul>
                     <a href={project.link} target="_blank">
                       <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                        <span>Visit Live Site</span>
+                        <span>{project.buttonTitle}</span>
                         <ArrowRightIcon className="size-4" />
                       </button>
                     </a>
