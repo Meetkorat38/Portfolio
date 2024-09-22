@@ -16,10 +16,10 @@ export const ContactSection = () => {
               </p>
             </div>
             <div>
-              <button className="text-white  bg-gray-900 inline-flex items-center px-6 h-12 md:h-16 rounded-xl mt-5 md:mt-0 gap-2 w-max">
+              <a href="https://www.linkedin.com/in/meet-korat-335632245/" target="_blank" className="text-white  bg-gray-900 inline-flex items-center px-6 h-12 md:h-16 rounded-xl mt-5 md:mt-0 gap-2 w-max">
                 <span className="font-semibold lg:text-lg">Get In Touch</span>
                 <CiLinkedin className="size-6 lg:size-8" />
-              </button>
+              </a>
             </div>
           </div>
         </div>

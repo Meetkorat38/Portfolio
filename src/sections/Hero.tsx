@@ -67,7 +67,7 @@ export const HeroSection = () => {
             <div className="dot size-2.5 rounded-full bg-green-500 relative">
               <div className="absolute bg-green-500 inset-0 animate-ping-large rounded-full"></div>
             </div>
-            <div className="text-sm ">Avvailable For New Opportunity</div>
+            <div className="text-sm ">Available For New Opportunity</div>
           </div>
         </div>
 
@@ -87,10 +87,10 @@ export const HeroSection = () => {
             <span className="font-semibold ">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+          <a href="https://www.linkedin.com/in/meet-korat-335632245/" target="_blank" className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
             <span>👋</span>
             <span className=" font-semibold">Let&apos;s connect</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>
