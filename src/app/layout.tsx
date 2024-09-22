@@ -16,7 +16,7 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "Korat Meet",
   description: "Created with Next js",
 };
 

@@ -93,38 +93,7 @@ const TOOL_BOX = [
   },
 ];
 
-const INTREST = [
-  {
-    title: "Photography",
-    icon: "📸",
-    top: "5%",
-    left: "5%",
-  },
-  {
-    title: "Devops",
-    icon: "♾️",
-    top: "45%",
-    left: "25%",
-  },
-  {
-    title: "Books",
-    icon: "📒",
-    top: "75%",
-    left: "9%",
-  },
-  {
-    title: "Anime",
-    icon: "𝓐𝓷𝓲𝓶𝓮",
-    top: "69%",
-    left: "58%",
-  },
-  {
-    title: "Games",
-    icon: "🎮",
-    top: "23%",
-    left: "61%",
-  },
-];
+
 
 export const AboutSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -139,17 +108,8 @@ export const AboutSection = () => {
 
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5  lg:grid-cols-3">
-            <Card className="h-[320px] md:col-span-2 lg:col-span-1">
-              <CardHeader
-                title="My Reads"
-                description="Explore the books shaping my perspectives."
-              />
-
-              <div className="w-40 mx-auto mt-8">
-                <Image src={BookPage} alt="Book Cover" />
-              </div>
-            </Card>
-            <Card className="h-[320px] md:col-span-3 lg:col-span-2">
+            
+            <Card className="h-[320px] md:col-span-5 lg:col-span-3">
               <CardHeader
                 title="My ToolBox"
                 description="Explore the Technologis and tools I use to crafting apps"
@@ -168,33 +128,17 @@ export const AboutSection = () => {
             </Card>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:grid-cols-3">
-            <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
+          <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
-                title="Beyond The Code"
-                description="Explore My Intrest and Hobbies beyound the code."
-                className="p-6"
+                title="My Reads"
+                description="Explore the books shaping my perspectives."
               />
-              <div className="relative flex-1 " ref={containerRef}>
-                {INTREST.map(({ title, icon, left, top }) => (
-                  <motion.div
-                    key={title}
-                    className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-400 bg-purple-500 rounded-full py-1.5 absolute"
-                    style={{
-                      top,
-                      left,
-                    }}
-                    drag
-                    dragConstraints={containerRef}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <span className="text-gray-950 font-medium">{title}</span>
-                    <span>{icon}</span>
-                  </motion.div>
-                ))}
+
+              <div className="w-40 mx-auto mt-8">
+                <Image src={BookPage} alt="Book Cover" />
               </div>
             </Card>
-            <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
+            <Card className="h-[320px] p-0 relative md:col-span-3 lg:col-span-2">
               <Image
                 className="object-cover h-full w-full"
                 src={mapImage}
