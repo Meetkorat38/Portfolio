@@ -40,7 +40,7 @@ const portfolioProjects = [
   {
     company: "Backend Project",
     year: "2023",
-    title: "Backedn for MERN stack app",
+    title: "Backend for MERN stack app",
     results: [
       { title: "AdminPower – MERN Stack Backend" },
       { title: "Admin Dashboard Integration" },

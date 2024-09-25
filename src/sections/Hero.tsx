@@ -5,6 +5,8 @@ import GrainImage from "@/assets/images/grain.jpg";
 import HeroOrbit from "@/components/HeroOrbit";
 import StarIcon from "@/assets/icons/star.svg";
 import SparkalIcon from "@/assets/icons/sparkle.svg";
+import { FaFileDownload } from "react-icons/fa";
+
 
 export const HeroSection = () => {
   return (
@@ -89,11 +91,11 @@ export const HeroSection = () => {
             <ArrowDown className="size-4" />
           </button>
           <a
-            href="https://www.linkedin.com/in/meet-korat-335632245/"
-            target="_blank"
+            href="/cv.pdf"
+            download={"korat meet.pdf"}
             className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-            <span>👋</span>
-            <span className=" font-semibold">Let&apos;s connect</span>
+            <span className="font-semibold">Download CV</span>
+            <span><FaFileDownload color="#22c55e"/></span>
           </a>
         </div>
       </div>
