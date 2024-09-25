@@ -77,8 +77,10 @@ export const HeroSection = () => {
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             Creative developer focused on building user-friendly, high-quality
-            applications that leave a lasting impression.{" "}
-          </p>
+            applications that leave a lasting impression. 
+            <br />
+            <span className="text-white/50  text-xs lg:text-sm font-extralight">~ ChatGPT</span>
+            </p>
         </div>
 
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
