@@ -15,7 +15,7 @@ const portfolioProjects = [
     year: "2022",
     title: "Create customization Iphone case",
     results: [
-      { title: "CaseCobra – Next.js 14 E-Commerce Shop" },
+      { title: "SnackCase – Next.js 14 E-Commerce Shop" },
       { title: "Tailored Artworks Integration" },
       { title: "Custom Phone Case Configurator" },
     ],
