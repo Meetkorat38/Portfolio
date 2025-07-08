@@ -91,7 +91,7 @@ export const HeroSection = () => {
             <ArrowDown className="size-4" />
           </button>
             <a
-            href="/meet_korat.pdf"
+            href="/korat_meet.pdf"
             download={"Korat_Meet.pdf"}
             className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
             <span className="font-semibold">Download CV</span>

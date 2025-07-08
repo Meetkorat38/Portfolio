@@ -7,12 +7,25 @@ import GrainImage from "@/assets/images/grain.jpg";
 import TextSection from "@/components/TextSection";
 import BackendImage from "@/assets/images/backend.png"
 import Snackcase from "@/assets/images/snackcase.png"
-import AspectMate from "@/assets/images/aspectmate.png"
+import GtuSolutions from "@/assets/images/gtu-solutions.png"
 
 const portfolioProjects = [
   {
+    company: "GTU Solutions",
+    year: "2025",
+    title: "Your Complete GTU Solutions Hub",
+    results: [
+      { title: "GTU Solutions – GTU paper solutions" },
+      { title: "Powered by Notion for dynamic content" },
+      { title: "Scalable Admin Panel" },
+    ],
+    link: "https://www.gtusolutions.fun/",
+    image: GtuSolutions,
+    buttonTitle : "Visit Live Site"
+  },
+  {
     company: "Snackcase",
-    year: "2022",
+    year: "2024",
     title: "Create customization Iphone case",
     results: [
       { title: "SnackCase – Next.js 14 E-Commerce Shop" },
@@ -22,20 +35,6 @@ const portfolioProjects = [
     link: "https://snackcase.vercel.app/",
     image: Snackcase,
     buttonTitle : "Visit Live Site"
-  },
-  {
-    company: "Aspect mate",
-    year: "2021",
-    title: "Give Dimensions to your image",
-    results: [
-      { title: "AspectMate – Cloud-Based Image Tool" },
-      { title: "Cloudinary Image Customization" },
-      { title: "SaaS Architecture with Tailwind" },
-    ],
-    link: "https://aspect-mate.vercel.app/",
-    image: AspectMate,
-    buttonTitle : "Visit Live Site"
-
   },
   {
     company: "Backend Project",
